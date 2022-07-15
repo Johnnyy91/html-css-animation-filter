@@ -37,47 +37,182 @@
 }
 
 
+/*EXERCISE 1*/
 
 .ex-1-square {
     width: 100px;
     height: 100px;
     border: 1px solid red;
 }
+
+.ex-1-square{
+    transition: 3s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/*EXERCISE 2*/
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+.ex-2-square{
+    transition: 3s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/*EXERCISE 3*/
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+.ex-3-square{
+    transition: 3s linear;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/*EXERCISE 4*/
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+.ex-4-square{
+    transition: 1s linear;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/*EXERCISE 5*/
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
 }
+
+.ex-5-square{
+    transition: 3s linear;
+}
+
+.ex-5-square:hover{
+  /*  width: 100px;
+    height: 100px; */
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+   /* width: 30px;
+    height: 30px; */
+    transform: scale(.5);
+}
+
+/*EXERCISE 6-7-8*/
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img{
+    transition: 3s linear;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(5) sepia(5);
+}
+
+.ex-8-img{
+    transition: 2s linear;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(.6) sepia(.6);
+    border-radius: 50px;
+}
+
+
+/*EXERCISE 9*/
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img{
+    transition: 2s linear;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(.7) sepia(.7);
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+/*EXERCISE 10*/
+
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+
+/*EXERCISE 11*/
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: spin 3s linear;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+/*EXERCISE 12-13*/
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
